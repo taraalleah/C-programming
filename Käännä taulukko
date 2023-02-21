@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+  
+  int x;
+  char kirjain[x];
+
+  printf(" Anna taulukon koko: ");
+  scanf("%i", &x);
+  getchar();
+  
+  for (int i = 0; i < x-1 ; i++){
+      printf("Anna %i.kirjain: ",i+1);
+      scanf("%c", &kirjain[i]);
+      getchar();
+  }
+  
+    printf("Taulukko kaannettyna on: [");
+    for(int i = x-2 ; i >=0 ; i--){
+      printf("%c,", kirjain[i]);
+  }
+    printf("]");
+
+    return 0;
+}
