@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    
+    int taulu[3]={0};
+     //Määrittelen taulukko kokonaislukuja
+    float luku;
+    
+    for(int i = 0; i < 3; i++){
+        printf("Anna %i liukuluku: ", i+1);
+        scanf("%f", &luku);
+        taulu[i] = (int)(luku+0.5);
+    //Pakotan liukuluku kokonaisluvuksi käyttämällä cast-operaattori
+    }
+    
+    printf("[");
+    for(int i = 0; i < 3; i++){
+        printf("%i,", taulu[i]);
+    //Tulostetaan taulukkoon arvot
+    }
+    printf("]");
+    
+    return 0;
+}
