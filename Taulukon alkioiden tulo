@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+
+    int luku[3];
+    int tulo;
+    
+    printf("Anna 3 lukua alle 10 arvoltaan: ");
+    scanf(" %i %i %i", &luku[0], &luku[1],&luku[2]);
+    
+    tulo = luku[0]*luku[1]*luku[2];
+    printf("Antamiesi lukujen tulo on %i", tulo);
+    
+    return 0;
+}
