@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+ 
+    float cm, m, km;
+
+    printf("Kuinka monta senttiä? : ");
+    scanf("%f", &cm);
+    m = (cm/100);
+    km = (cm/100000);
+    printf("Pituus metreinä on %.2f m \n", m);
+    printf("Pituus kilometreinä on %.2f km", km);
+    
+    return 0;
+    
+}
