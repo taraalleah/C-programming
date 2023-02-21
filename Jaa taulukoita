@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+    int taulu1[6]={};
+    int taulu2[6]={};
+    int taulu3[6]={};
+    
+    for(int i = 0; i < 6; i++){
+         printf("Anna luku%i: ", i+1);
+         scanf("%i", &taulu1[i]);
+    }
+    
+    for(int i = 0; i < 6; i +=2){
+         taulu2[i] = taulu1[i];
+    }
+    
+    for(int i = 1; i < 6; i +=2){
+        taulu3[i] = taulu1[i];
+     
+    }
+     printf("[");
+     for(int i = 0; i < 6; i++){
+          printf("%i,", taulu1[i]);
+     }
+     printf("]\n");
+     printf("[");
+     for(int i = 0; i < 6; i++){
+          printf("%i,", taulu2[i]);
+     }
+
+     printf("]\n");
+     printf("[");
+     for(int i = 0; i < 6; i++){
+          printf("%i,", taulu3[i]);
+     }
+     printf("]\n");
+
+    return 0;
+}
