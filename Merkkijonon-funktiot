@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h> 
+
+int main() {
+    int koko;
+    char nimi1[15];
+    char nimi2[10];
+    char suku[10];
+    char k = 'a';
+   
+    printf("Anna etunimi: ");
+    scanf("%s", nimi1);
+    printf("Anna lempinimi: ");
+    scanf("%s", nimi2);
+    printf("Anna sukunimi: ");
+    scanf("%s", suku);
+    
+    koko = strlen(nimi1);
+    printf("Etunimet kirjaimet yhteensä %i\n", koko);
+    
+    strcpy(nimi2,nimi1);
+    printf("%s\n", nimi1);
+    printf("%s\n", nimi2);
+    printf("%s\n", suku);
+    
+    strcat(nimi1,suku);
+    printf("Koko nimesi on %s\n", nimi1);
+    
+    printf("%c löytyy kohdasta %s",k, strchr(nimi1, k));
+    
+    return 0;
+}
