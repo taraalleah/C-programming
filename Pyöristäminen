@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    
+    float f = 8.98;
+    int g = f+0.5;
+    
+    printf("Lukusi tulostettuna on %f \n",f);
+    printf("Lukusi tulostettuna kokonaislukuna %i \n", (int)f);
+    printf("Lukusi tulostettuna yhden desimaalin tarkkuudella %.1f \n", f);
+    printf("Lukusi tulostettuna ja tallennettuna koknaislukuna oikein pyöristettynä %i \n", g);
+    
+    return 0;
+}
