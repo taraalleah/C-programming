@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    
+    int luku;
+    
+    printf("Anna luku: ");
+    scanf("%i", &luku);
+    
+    if(luku%2 == 0){
+        printf("Luku on %i parillinen", luku);
+    }else{
+        printf("Seurava parillinen luku on %i", luku+1);
+    }
+
+    return 0;
+}
