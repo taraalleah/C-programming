@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    
+    int x;
+    int summa;
+    
+    printf("Anna luku: ");
+    scanf("%i", &x);
+    
+    for(int i = 1; i <= x; i++){
+        if(i%2 != 0){
+            summa = summa + i;
+    }
+    }
+    printf("Parittomien summa on %i", summa);
+    
+    return 0;
+}
