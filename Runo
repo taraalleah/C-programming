@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    
+    char adjektivi[20], subpar[20], verbi[20], paikka[20], subperus[20];
+    int num;
+    
+    printf("Anna adjektivi: ");
+    scanf("%s", &adjektivi);
+    printf("Anna substantiivin partitiivin monikko: ");
+    scanf("%s", &subpar);
+    printf("Anna verbi: ");
+    scanf("%s", &verbi);
+    printf("Anna paikka: ");
+    scanf("%s", &paikka);
+    printf("Anna numero: ");
+    scanf("%i", &num);
+    printf("Anna substantviivin perusmuodossa: ");
+    scanf("%s", &subperus);
+    
+    printf("Anna kun kerron tarinan. \nOli %s ihminen. \nHän halusi saada paljon %s.\nSaadakseen ne häntä käskettiin %s!\n%s on se paikka mistä %s löytyy %i.\nKoska hän ei halunnut %s, %s %s oli hänen kohtalo etsiessään kukkia", adjektivi, subpar, verbi, paikka, subpar, num, verbi, adjektivi, subperus, subpar);
+  
+     
+    return 0;
+}
